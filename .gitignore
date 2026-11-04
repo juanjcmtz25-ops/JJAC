@@ -1,0 +1,14 @@
+#python
+__pycache__/
+*py[cod]
+
+#django
+db.sqlite3
+
+#entornos virtuales
+
+venv/
+.venv/
+
+#variables de entorno
+.env
