@@ -1,23 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     margin: 0;
-    background-color: #57c2b4;
-    color: #0a0909;
+    background-color: #e0f2fe;
+    color: #0f172a;
 }
 
 /* ENCABEZADO */
 header {
-    background-color: rgb(66, 146, 1);
-    color: rgba(5, 5, 5, 0.186);
+    background-color: #38bdf8;
+    color: #000000;
     text-align: center;
     padding: 20px;
 }
 
-/* MENÚ */
+/* MENU */
 nav {
-    background-color: #f09f76;
+    background-color: #7dd3fc;
     padding: 10px;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -29,18 +30,19 @@ nav li {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: #000000;
+    font-size: 18px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #ceb41f;
+    color: #1d4ed8;
 }
 
 /* CONTENIDO PRINCIPAL */
 .bienvenida {
-    background-color: srgb(203, 201, 201);
+    background-color: #ffffff;
     text-align: center;
     padding: 50px 20px;
     margin: 30px;
@@ -48,7 +50,7 @@ nav a:hover {
 }
 
 .bienvenida h2 {
-    color: rgb(197, 114, 114);
+    color: #0369a1;
 }
 
 .bienvenida p {
@@ -56,10 +58,73 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* PIE DE PÁGINA */
+/* PIE DE PAGINA */
 footer {
-    background-color: rgb(199, 199, 201);
-    color: rgb(0, 0, 0);
+    background-color: #38bdf8;
+    color: #000000;
     text-align: center;
     padding: 15px;
+}
+
+form {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f1f5f9;
+}
+
+button {
+    background-color: #f97316;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    width: 95%;
+    cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: rgb(0, 0, 0);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.futbol-page {
+    background-color: #0b2e1d;
+    color: #ffffff;
+}
+
+.futbol-page form {
+    background-color: #14532d;
+    border: 2px solid #4ade80;
+}
+
+.futbol-page label {
+    background-color: transparent;
+    color: #facc15;
+}
+
+.futbol-page input, .futbol-page select, .futbol-page textarea {
+    background-color: #052e16;
+    color: #ffffff;
+}
+
+.futbol-page button {
+    background-color: #f97316;
+    color: #ffffff;
 }

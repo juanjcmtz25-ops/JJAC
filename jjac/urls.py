@@ -20,5 +20,9 @@ from cortes import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.inicio),
-]
+    path('', views.inicio, name= 'inicio'),
+    path('inicio', views.inicio, name= 'inicio'),
+    path('registro', views.registro, name= 'registro'),
+    path('futbol', views.futbol, name= 'futbol'),
+    
+    ]

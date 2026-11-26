@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+
+    <link rel="stylesheet" href="{% static 'cortes/style.css' %}">
+</head>
+
+<body> <l--contenido-->
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>registra tus datos</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="futbol">futbol</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<form method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre..." required>
+    <label>Apellido paterno:</label>
+    <input type="text" name="apellido" placeholder="Escribe tu apellido materno..." required>
+    <label>Apellido materno:</label>
+    <input type="text" name="apellido" placeholder="Escribe tu apellido materno..." required>
+    <label>Edad:</label>
+    <input type="number" name="edad" min="14" max="25" placeholder="Escribe tu edad..." required>
+    <label>Genero:</label><br>
+    <input type="radio" name="femenino" value="femenino">Femenino<br>
+    <input type="radio" name="masculino" value="masculino">Masculino<br>
+    <label>Intereses:</label><br>
+    <input type="checkbox" name="intereses" value="futbol">Futbol<br>
+    <input type="checkbox" name="intereses" value="musica">Musica<br>
+    <input type="checkbox" name="intereses" value="videojuegos">Videojuegos<br>
+    <input type="checkbox" name="intereses" value="salir a pasear">Salir a pasear<br>
+    <button type="submit">GUARDAR</button>               
+</form>
+
+  <!-- pie de página -->
+  <footer>
+</body>
+</html>

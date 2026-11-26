@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>futbol</title>
+
+    <link rel="stylesheet" href="{% static 'cortes/style.css' %}">
+</head>
+
+<body class="futbol-page"> <l--contenido-->
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>registra tus datos</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="futbol">futbol</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<form method="post">
+    <label>Nombre del jugador:</label>
+    <input type="text" name="nombre del jugador" placeholder="Nombre del jugador..." required>
+    <label>Nombre del equipo:</label>
+    <input type="text" name="nombre del equipo" placeholder="Escribe nombre del equipo..." required>
+    <label>Correo electronico:</label>
+    <input type="text" name="correo electronico" placeholder="Escribe tu correo electronico..." required>
+    <label>Numero de camiseta:</label>
+    <input type="number" name="numero" min="1" max="67" placeholder="Escribe tu numero de camiseta..." required>
+    <label>Posicion:</label><br>
+    <input type="radio" name="posicion" value="portero"> Portero<br>
+    <input type="radio" name="posicion" value="defensa"> Defensa<br>
+    <input type="radio" name="posicion" value="medio"> Medio<br>
+    <input type="radio" name="posicion" value="delantero"> Delantero<br>
+    <label>Dias disponibles para jugar:</label><br>
+    <input type="radio" name="dias_disponibles" value="viernes"> Viernes<br>
+    <input type="radio" name="dias_disponibles" value="sabado"> Sabado<br>
+    <input type="radio" name="dias_disponibles" value="domingo"> Domingo<br>
+    <button type="submit">REGISTRAR EQUIPO</button>               
+</form>
+
+  <!-- pie de página -->
+  <footer>
+</body>
+</html>
